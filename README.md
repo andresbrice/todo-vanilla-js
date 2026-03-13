@@ -1,57 +1,56 @@
-# Proyecto 02 — Todo App
+# Todo App
 
-Aplicación de gestión de tareas construida con HTML, CSS y JavaScript vanilla.
-Segundo proyecto del portfolio — primer proyecto implementado de principio a fin.
-
----
-
-## Stack tecnológico
-
-- **HTML5** semántico
-- **CSS3** con variables, BEM, Flexbox y diseño responsivo
-- **JavaScript ES6+** puro (sin frameworks ni librerías)
-- **localStorage** para persistencia de datos
-- **Quotable.io API** para frases motivacionales
+Task management app built with HTML, CSS and vanilla JavaScript.
 
 ---
 
-## Lo que hace la aplicación
+## Tech Stack
 
-- Agregar, completar y eliminar tareas
-- Limpiar todas las tareas completadas de una vez
-- Filtrar por estado: todas / pendientes / completadas
-- Ordenar por fecha o alfabéticamente
-- Frase motivacional desde la API cuando no hay tareas
-- Persistencia automática en localStorage (las tareas sobreviven al recargar)
-- Sistema de notificaciones para feedback de acciones
+- **HTML5** semantic markup
+- **CSS3** with variables, BEM, Flexbox and responsive design
+- **Vanilla JavaScript ES6+** (no frameworks or libraries)
+- **localStorage** for data persistence
+- **Quotable.io API** for motivational quotes
 
 ---
 
-## Estructura del proyecto
+## Features
+
+- Add, complete and delete tasks
+- Clear all completed tasks at once
+- Filter by status: all / pending / completed
+- Sort by date or alphabetically
+- Motivational quote from the API when there are no tasks
+- Automatic persistence in localStorage (tasks survive page reload)
+- Notification system for action feedback
+
+---
+
+## Project Structure
 
 ```
-02-todo-vanilla-js/
+todo-vanilla-js/
 ├── index.html
 ├── css/
 │   └── styles.css
 └── js/
-    ├── app.js       ← entrada y coordinación
-    ├── store.js     ← estado de la aplicación
-    ├── storage.js   ← lectura y escritura en localStorage
-    ├── ui.js        ← manipulación del DOM
-    └── api.js       ← llamadas a Quotable.io
+    ├── app.js       ← entry point and coordination
+    ├── store.js     ← application state
+    ├── storage.js   ← localStorage read/write
+    ├── ui.js        ← DOM manipulation
+    └── api.js       ← Quotable.io calls
 ```
 
 ---
 
 ## Demo
 
-→ [Ver en vivo](https://andresbriceño.github.io/02-todo-vanilla-js/) *(disponible al hacer deploy)*
+→ [Live demo](https://andresbrice.github.io/todo-vanilla-js/) *(available after deploy)*
 
 ---
 
-## Desarrollo local
+## Local Development
 
-Abrí `index.html` con Live Server desde VS Code.
+Open `index.html` with Live Server from VS Code.
 
-> Requiere Live Server por el uso de ES6 modules (`type="module"`).
+> Requires Live Server due to ES6 modules (`type="module"`).
