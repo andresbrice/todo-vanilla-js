@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo App</title>
+        <meta name="author" content="Andrés Briceño">
+        <meta name="description" content="Task management app built with vanilla JavaScript, localStorage persistence, and Quotable.io API integration.">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>TODO App</h1>
+            <p>Organizá tu día</p>
+        </header>
+
+        <main>
+
+            <section id="add-task">
+                <form id="add-task-form">
+                    <label for="add-new-task">Agregar nueva tarea</label>
+                    <input id="add-new-task" type="text" maxlength="200" placeholder="Nueva tarea..." required>
+                    <button type="submit">Agregar</button>
+                </form>
+            </section>
+
+            <section id="taskfilter">
+                <button type="button" class="active">Todas</button>
+                <button type="button">Pendientes</button>
+                <button type="button">Completadas</button>
+
+            </section>
+
+            <section id="tasks-list">
+                <ul>
+                    <li class="completada">
+                        <input type="checkbox" name="task" id="task-1" checked>
+                        <label for="task-1">Estudiar JS</label>
+                        <button type="button"> X</button>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="task" id="task-2">
+                        <label for="task-2">Meditar</label>
+                        <button type="button"> X</button>
+                    </li>
+                </ul>
+
+                <label for="orden">Ordenar:</label>
+                <select name="orden" id="orden">
+                    <option value="fecha">Por fecha</option>
+                    <option value="alfabeto">Orden Alfabético</option>
+                </select>
+                <button type="button">Limpiar</button>
+
+            </section>
+
+            <section>
+                <p id="motivational-message">
+                    No tenés tareas pendientes. <span><!-- aqui va el mensaje motivador --></span>
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <label for="progress-tasks">2 pendientes de 3 tareas</label>
+            <span><progress id="progress-tasks" max="100" value="70">70%</progress></span>
+        </footer>
+        <div class="toast toast--success">
+            <p>Tarea agregada con éxito</p>
+        </div>
+        <div class="toast toast--error">
+            <p>El texto no puede estar vacío.</p>
+        </div>
+        <script src="js/script.js" type="module"></script>
+    </body>
+
+</html>
